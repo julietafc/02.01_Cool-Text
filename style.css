@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10em 0;
+  font-family: sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.animation {
+  animation: up 1.3s forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  white-space: pre;
+  display: inline-block;
+  opacity: 0;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(115%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
